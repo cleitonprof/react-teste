@@ -25,7 +25,7 @@ const CampoTexto = (props) => {
     }
 
     return (
-        <div className="campo-texto">
+        <div className='campo-texto'>
             <label>
                 {props.label}
             </label>
