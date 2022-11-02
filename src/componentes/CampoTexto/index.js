@@ -1,3 +1,4 @@
+/*
 import './CampoTexto.css'
 
 const CampoTexto = () => {
@@ -12,8 +13,8 @@ const CampoTexto = () => {
 }
 export default CampoTexto
 
+*/
 
-/*
 const CampoTexto = (props) => {
 
     const placeholderModificada = `${props.placeholder}...` 
@@ -35,4 +36,3 @@ const CampoTexto = (props) => {
 }
 
 export default CampoTexto
-*/
