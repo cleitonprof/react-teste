@@ -6,11 +6,6 @@ import './Formulario.css'
 
 const Formulario = (props) => {
 
-    const grupos = [
-        'Node',
-        'React',
-        'MongoDB'
-    ]
     const [nome, setNome] = useState('')
     const [matricula, setMatricula] = useState('')
     const [imagem, setImagem] = useState('')
@@ -24,6 +19,10 @@ const Formulario = (props) => {
             imagem,
             grupo
         })
+        setNome('')
+        setMatricula('')
+        setImagem('')
+        setGrupo('')
     }
 
     return (
@@ -52,7 +51,7 @@ const Formulario = (props) => {
                 <ListaSuspensa
                     obrigatorio={true}
                     label='Grupo'
-                    itens={grupos}
+                    itens={props.grupos}
                     valor={grupo}
                     aoAlterado={valor => setGrupo(valor)}
                 />
